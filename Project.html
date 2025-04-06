@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Welcome to my Project area</title>
+        <style>
+            body{
+              background-color: plum;
+              height:300px;
+              align-items: center;
+              display: flex; 
+              color: purple;
+            }
+            #project{
+              color: blueviolet;
+              align-items: center;
+              height: 300px;
+              width: 300px;
+              background-color: snow;
+            }
+          </style>
+    </head>
+    <body>
+        <div id="project">
+            <h1>General Quotes</h1>
+            <p id="hw"></p>
+            <button onclick="ChangeQuotes()" id="btn">click</button>
+            </div>
+            <script>
+             function ChangeQuotes()
+                {
+                 let arr=["The future belongd to those who believe in the beauty of their dreams.","The best way to predict the future is to create it.","Success is a journey not a destination.","The best way to predict the future is to create it.","In the middle of every difficulty lies opportunity.","Everyday is a new beginning,take a deeep breath and start again.","You are never fully dressed without a smile.","Believe you can, and you're halfway there.","With the new day comes new strength and new thoughts.","Optimism is the faith that leads to achievement."];
+                 let value=(Math.floor(Math.random()*10));
+                 document.getElementById("hw").innerHTML=arr[value];    
+                }
+    
+    
+            </script>
+    </body>
+</html>
